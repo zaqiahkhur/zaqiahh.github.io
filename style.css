@@ -92,18 +92,30 @@ background: radial-gradient(circle, #FFCFCF, #FFE2E2); /* Radial gradient */
   height: 100%;
   background-color: #A888B5;
   border-radius: 10px 0 0 10px;
-  animation: fillSkillBar 2s ease-in-out forwards;
+  /* animation: fillSkillBar 2s ease-in-out forwards; */
 }
 
-/* Animation for skill bar fill */
-@keyframes fillSkillBar {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+.icon-text {
+    display: flex;
+    align-items: center; /* Menyelaraskan ikon dan teks secara vertikal */
+    gap: 10px; /* Jarak antara ikon dan teks */
 }
+
+.icon-text img {
+    display: inline-block;
+}
+
+.icon-text span {
+    font-size: 16px;
+    color: #000; /* Ubah warna teks sesuai keinginan */
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Jarak antar elemen */
+}
+
+
 
 /* Styling for skill bars */
 .skill-bar-fill {
